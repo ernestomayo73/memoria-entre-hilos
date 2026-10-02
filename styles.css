@@ -1,0 +1,196 @@
+body{
+    background-image: url(./fotos/fondo\ juego.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    margin-top: 20px;
+}
+#btn-refresh {
+    position: fixed;
+    top: 510px; /* Distancia desde la parte superior */
+    left: 50px; /* Distancia desde la izquierda */
+    z-index: 999;
+    width: auto; /* Ancho automático para adaptarse al contenido */
+    height: 30px; /* Cambia la altura del botón */
+    font-size: 9px; /* Cambia el tamaño de la fuente */
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Elimina el borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 30px; /* Alinea verticalmente el texto en el centro */
+    padding: 0 10px; /* Espaciado interno para separar el texto del borde */
+    transition: none; /* Elimina la transición en clic (elimina la animación) */
+}
+#btn-refresh:active {
+    transform: none;
+}
+main{
+    width: 730px;
+    margin: 9px auto 50px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white
+}
+.section1{
+    background: rgb(133,202,241);
+    background: linear-gradient(0deg, rgba(133,202,241,1) 0%, rgba(56,146,197,1) 100%);
+    padding: 0 10px 10px 10px;
+    border-radius: 8px;
+}
+h1{
+    text-align: center;
+}
+button{
+    height: 100px;
+    width: 100px;
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    perspective: 1000px;
+    outline: none;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+button img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+button.destapada {
+    transform: rotateY(180deg);
+    transition: transform 0.5s ease;
+  }
+.section2{
+    padding: 0 20px;
+    width: 250px;
+    height: auto;
+    border-top-right-radius: 8px;
+    background: rgb(133,202,241);
+    background: linear-gradient(0deg, rgba(133,202,241,1) 0%, rgba(56,146,197,1) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+.estadisticas{
+    background-color: rgb(255,255,255,0.2);
+    height: 100px;
+    border-radius: 8px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start{
+    height: 50px;
+    width: 250px;
+    font-size: 25px;
+    border-top-right-radius: 8px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+}
+footer{
+    font-size: 20px;
+    text-align: center;
+    cursor: not-allowed
+}
+img{
+    width: 80%;
+}
+
+
+.welcome-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    z-index: 9999; /* Asegura que la pantalla de bienvenida esté en la parte superior */
+    color: white;
+}
+
+.welcome-screen h1 {
+    font-size: 24px;
+}
+
+.start {
+    background-color: #007BFF;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    animation: none;
+}
+
+.start:hover {
+    background-color: #0056B3;
+}
+
+.welcome-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./fotos/fondo\ bienvenida.jpg'); /* Cambia la imagen de fondo aquí */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 9999;
+    color: white;
+    animation: none;
+}
+
+.welcome-content {
+    text-align: center;
+}
+
+.welcome-content h1 {
+    font-size: 24px;
+}
+
+.start {
+    background-color: #007BFF;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.start:hover {
+    background-color: #0056B3;
+    animation: none !important;
+}
